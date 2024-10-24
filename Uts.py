@@ -18,7 +18,7 @@ def generate_random_points_in_circle(n_points, radius=1):
     return np.array(points)
 
 # Meminta input dari pengguna untuk jumlah titik
-n_points = st.slider("Jumlah titik acak", min_value=10, max_value=100, value=50, step=5)
+n_points = st.sidebar.slider("Jumlah titik acak", min_value=10, max_value=100, value=50, step=5)
 
 # Menghasilkan titik acak di dalam lingkaran dengan radius 1
 points = generate_random_points_in_circle(n_points)
