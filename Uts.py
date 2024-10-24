@@ -6,7 +6,7 @@ from matplotlib.patches import Circle
 
 
 st.title("Fisika Komputasi Awan")
-st.title("Nugroho Adi Pramono :sunglasses:")
+st.title("Enrico Frans Ganya")
 circle = Circle((0, 0), 1, color='red', fill=False, linewidth=2, linestyle='-', alpha=0.2)
 x = []
 y = []
@@ -16,7 +16,7 @@ x.append(0)
 y.append(0)
 color.append((0.,.7,0.))
 size.append(371)
-if st.button("Data"):
+if st.button("Click"):
     for i in range(111):
         x0 = 2*(random.random() - .5)
         y0 = 2*(random.random() - .5)
@@ -52,7 +52,5 @@ ax.set_ylim([-1, 1])
 st.pyplot(fig)
 st.caption("Lingkaran dengan ukuran dan warna acak dan tersebar didalam lingkaran dengan radius 1")
 st.divider()
-st.text("Buat website seperti di atas dengan menggunakan GitHub dan Streamlit.")
-st.text("Kirim video saat website dijalankan.") 
-st.text("Pastikan nama dan alamat website terlihat.")
+st.text("UTS menggunakan GitHub dan Streamlit.")
 st.divider()
