@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 
 
-st.title("Fisika Komputasi Awan")
+st.title("UTS Fisika Komputasi Awan")
 st.title("Enrico Frans Ganya")
 circle = Circle((0, 0), 1, color='red', fill=False, linewidth=2, linestyle='-', alpha=0.2)
 x = []
@@ -42,9 +42,8 @@ ax.scatter(x, y, c=color, s=size, alpha=0.5)
 ax.set_ylabel("y")
 ax.set_xlabel("x")
 ax.tick_params(axis='y', labelsize=20)
-#ax.set_xticklabels(ax.get_xticklabels(), rotation=30, ha='right')
 ax.tick_params(axis='x', labelsize=15)
-ax.set_title('Data Acak yang berubah setiap tombol ditekan')
+ax.set_title('Data Acak yang berubah setiap tombol click ditekan')
 ax.grid(True, linestyle='-.')
 ax.tick_params(labelcolor='r', labelsize='medium', width=3)
 ax.set_xlim([-1, 1])
