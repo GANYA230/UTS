@@ -6,7 +6,7 @@ from matplotlib.patches import Circle
 
 
 st.title("UTS Fisika Komputasi Awan")
-st.title("Fidelia Nugisyah Putri :two_hearts:")
+st.title("Enrico Frans Ganya")
 circle = Circle((0, 0), 1, color='red', fill=False, linewidth=2, linestyle='-', alpha=0.2)
 x = []
 y = []
@@ -16,11 +16,11 @@ x.append(0)
 y.append(0)
 color.append((0.,.7,0.))
 size.append(371)
-if st.button("Random"):
+if st.button("Click"):
     for i in range(111):
         x0 = 2*(random.random() - .5)
         y0 = 2*(random.random() - .5)
-        if ((x0**2+y0**2)>1.):
+        if ((x0*2+y0*2)>1.):
             if y0>0:
                 y0 = np.sqrt(1-x0**2)
             else:
@@ -43,7 +43,7 @@ ax.set_ylabel("y")
 ax.set_xlabel("x")
 ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15)
-ax.set_title('Data Acak yang berubah setiap tombol random ditekan')
+ax.set_title('Data Acak yang berubah setiap tombol click ditekan')
 ax.grid(True, linestyle='-.')
 ax.tick_params(labelcolor='r', labelsize='medium', width=3)
 ax.set_xlim([-1, 1])
